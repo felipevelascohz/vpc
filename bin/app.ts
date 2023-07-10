@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { Sqs } from '../src/sqs';
+import { VpcPrivate } from '../src/vpc';
 
 const iniciativa :string = 'IdSbxFelipeVelasco';
 const provider = {
@@ -15,6 +15,6 @@ const stack = new cdk.Stack(app, iniciativa, {
   env: provider
 })
 
-new Sqs(stack, iniciativa, {})
+new VpcPrivate(stack, iniciativa)
 
 app.synth();

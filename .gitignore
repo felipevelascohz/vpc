@@ -3,3 +3,4 @@ lib/
 cdk.out/
 ./sqs.* 
 ./index.*
+cdk.context.json
