@@ -1,6 +1,6 @@
 node_modules/
 lib/
 cdk.out/
-./sqs.* 
+./vpc.* 
 ./index.*
 cdk.context.json
